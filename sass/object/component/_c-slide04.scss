@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.c-slide04 .splide__pagination {
+  bottom: r(-32);
+  @include mq() {
+    bottom: r(-24);
+  }
+}
+
+.c-slide04 .splide__pagination__page {
+  width: r(16);
+  height: r(16);
+  margin-inline: r(8);
+  background-color: var(--color-white);
+  border: r(2) solid var(--color-base);
+  @include mq() {
+    width: r(12);
+    height: r(12);
+    margin-inline: r(4);
+  }
+}
+
+.c-slide04 .splide__pagination__page.is-active {
+  transform: scale(1);
+  background-color: var(--color-base);
+}
