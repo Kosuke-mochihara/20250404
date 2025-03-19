@@ -11,9 +11,12 @@ export function slide() {
       pagination: false,
       drag: false,
       swipe: false,
-      fixedWidth: 'min(640px, calc(640 / 1440 * 100vw))',
+      // fixedWidth: 'min(640px, calc(640 / 1440 * 100vw))',
+      fixedWidth: 'calc(640 / 1440 * 100vw)',
       autoScroll: {
         speed: 0.5,
+        pauseOnHover: false,
+        pauseOnFocus: false
       },
       breakpoints: {
         768: {
@@ -39,8 +42,11 @@ export function slide() {
       arrows: false,
       pagination: true,
       focus: 0,
-      fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
-      gap: 'min(40px, calc(40 / 1440 * 100vw))',
+      // fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
+      // gap: 'min(40px, calc(40 / 1440 * 100vw))',
+      fixedWidth: 'calc(416 / 1440 * 100vw)',
+      padding: "33%",
+      gap: '38px',
       breakpoints: {
         768: {
           fixedWidth: 'min(294px, calc(294 / 375 * 100vw))',
@@ -60,9 +66,12 @@ export function slide() {
       pagination: false,
       drag: false,
       swipe: false,
-      fixedWidth: 'min(640px, calc(640 / 1440 * 100vw))',
+      // fixedWidth: 'min(640px, calc(640 / 1440 * 100vw))',
+      fixedWidth: 'calc(640 / 1440 * 100vw)',
       autoScroll: {
         speed: 0.5,
+        pauseOnHover: false,
+        pauseOnFocus: false
       },
       breakpoints: {
         768: {
@@ -89,8 +98,11 @@ export function slide() {
       arrows: false,
       pagination: true,
       focus: 0,
-      fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
-      gap: 'min(40px, calc(40 / 1440 * 100vw))',
+      // fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
+      // gap: 'min(40px, calc(40 / 1440 * 100vw))',
+      fixedWidth: 'calc(416 / 1440 * 100vw)',
+      padding: "33%",
+      gap: '38px',
       breakpoints: {
         768: {
           fixedWidth: 'min(294px, calc(294 / 375 * 100vw))',

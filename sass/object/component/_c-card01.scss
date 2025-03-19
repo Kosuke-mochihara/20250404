@@ -13,7 +13,6 @@
   background-color: var(--color-white);
   border: r(2) solid var(--color-light-blue);
   width: 100%;
-  max-width: r(422);
   @include mq() {
     border-radius: r(20);
   }

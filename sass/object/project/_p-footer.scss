@@ -1,19 +1,96 @@
 @use "global" as *;
 
 .p-footer {
-  background: $sub-color;
-  padding-top: r(50);
-  padding-bottom: r(20);
+  padding-block: r(224) r(288);
+  @include mq() {
+    padding-block: r(58) r(76);
+  }
 }
+
 .p-footer__inner {
+  width: 95%;
+  margin-inline: auto;
+  padding-inline: 13% 17%;
   display: grid;
+  grid-template-columns: r(600) r(480);
+  grid-template-columns: calc(600 / 1440 * 100vw) calc(480 / 1440 * 100vw);
+  gap: calc(13 / 1440 * 100vw);
+  @include mq() {
+    padding-inline: 10%;
+    align-items: center;
+  }
+}
+
+.p-card01__textImg {
+  padding-inline: r(60);
+  @include mq() {
+    padding-inline: r(10);
+  }
+}
+
+.p-footer__wrapperBlock {
+  @include mq() {
+    display: none;
+  }
+}
+
+.p-footer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: r(40);
   justify-content: center;
+  margin: r(32);
 }
-.p-footer__address {
-  text-align: center;
-  line-height: 1.6;
+
+.p-footer__snsTitle {
+  font-size: r(30);
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  @include mq() {
+    font-size: r(20);
+  }
 }
-.p-footer__copy {
-  margin-top: r(30);
+
+.p-footer__snsLists {
+  display: flex;
+  gap: r(12);
+}
+
+.p-footer__snsLink {
+  width: r(32);
+  aspect-ratio: 33 / 32;
+  overflow: hidden;
+  display: block;
+  @include mq() {
+    width: r(24);
+    aspect-ratio: 20 / 20;
+  }
+}
+
+.p-footer__snsLink img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-hooter__copyright {
+  font-size: r(20);
+  font-weight: 600;
+  line-height: normal;
   text-align: center;
+  @include mq() {
+    font-size: r(14);
+  }
+}
+
+.p-footer__wrapperSP {
+  display: none;
+  @include mq() {
+    display: flex;
+    justify-content: center;
+    gap: r(20);
+    padding: r(12);
+    margin-top: r(12);
+  }
 }

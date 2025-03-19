@@ -2,6 +2,7 @@
 
 .c-slide02 .splide__pagination {
   bottom: r(-32);
+  bottom: calc(-32 / 1440 * 100vw);
   @include mq() {
     bottom: r(-24);
   }
