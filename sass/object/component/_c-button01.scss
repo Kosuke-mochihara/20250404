@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.c-button01 {
+  color: var(--color-base);
+  background-color: var(--color-white);
+  border: r(2) solid var(--color-base);
+  text-align: center;
+  font-size: r(30);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(1.5 / 30 * 1em);
+  text-transform: uppercase;
+  padding-block: r(20);
+  border-radius: r(66);
+  width: 100%;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
+  @include mq() {
+    max-width: r(300);
+    padding-block: r(10);
+    font-size: r(16);
+  }
+}
+
+.c-button01._accent {
+  position: relative;
+}
+
+.c-button01._accent::before {
+  position: absolute;
+  content: "";
+  top: r(-57);
+  left: 50%;
+  transform: translateX(-50%);
+  width: r(90);
+  height: r(65);
+  background-image: url(../img/kitty-icon.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  @include mq() {
+    top: r(-34);
+    width: r(50);
+    height: r(36);
+  }
+}
+
+@media (any-hover: hover) {
+  .c-button01:hover {
+    background-color: var(--color-base);
+    color: var(--color-white);
+  }
+  .c-button01:hover::after {
+    position: absolute;
+    content: "";
+    top: r(-67);
+    left: 50%;
+    transform: translateX(-50%);
+    width: r(140);
+    height: r(48);
+    background-image: url(../img/kitty-apple-icon.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    @include mq() {
+      top: r(-39);
+      width: r(75);
+      height: r(26);
+    }
+  }
+}

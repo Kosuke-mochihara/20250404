@@ -1,0 +1,31 @@
+@use "global" as *;
+
+//768px以上非表示
+.u-hidden-pc {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+//モバイル非表示
+.u-hidden-sp {
+  display: block;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+// 隠しテキスト
+.u-visually-hidden {
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  margin: -1px !important;
+}

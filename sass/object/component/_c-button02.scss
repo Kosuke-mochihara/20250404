@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-button02 {
+  color: var(--color-base);
+  border: r(2) solid var(--color-base);
+  text-align: center;
+  font-size: r(20);
+  font-weight: 700;
+  border-radius: r(66);
+  background-color: var(--color-white);
+  padding-block: r(10);
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  max-width: r(300);
+  text-transform: uppercase;
+  margin-left: r(18);
+  @include mq() {
+    font-size: r(17);
+    max-width: r(243);
+    padding-block: r(6);
+  }
+}
+
+.c-button02:hover {
+  background-color: var(--color-base);
+  color: var(--color-white);
+}

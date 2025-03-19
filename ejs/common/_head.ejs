@@ -1,0 +1,51 @@
+<head>
+  <% if(false) { %>
+  <!-- noindex -->
+  <meta name="robots" content="noindex" />
+  <% } %>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title><%= meta.pageTitle %></title>
+  <meta name="description" content="<%= meta.description %>" />
+  <meta name="keywords" content="<%= meta.keywords %>" />
+  <!-- ogp -->
+  <meta property="og:title" content="<%= meta.siteName %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= meta.url %>" />
+  <meta property="og:image" content="<%= meta.ogpImage %>" />
+  <meta property="og:site_name" content="<%= meta.pageTitle %>" />
+  <meta property="og:description" content="<%= meta.description %>" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="<%= meta.description %>" />
+  <meta name="twitter:title" content="<%= meta.siteName %>" />
+  <meta name="twitter:image" content="<%= meta.ogpImage %>" />
+
+  <!-- icon -->
+  <link rel="icon" href="./img/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="./img/common/icon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="./img/common/icon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="./img/common/icon-72x72.png" sizes="72x72" type="image/png" />
+  <link rel="apple-touch-icon" href="./img/common/apple-touch-icon-152x152.png" />
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+  <!--  ファビコン -->
+  <link rel="icon" href="#" />
+
+  <!-- css -->
+  <% const random = Math.floor( Math.random() * 9000000000 ); %>
+  <link rel="stylesheet" href="./css/style.css?ver=<%= random %>" />
+
+  <!-- //gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <!-- JavaScript -->
+  <script defer src="./js/script.js?ver=<%= random %>"></script>
+</head>

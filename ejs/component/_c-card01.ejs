@@ -1,0 +1,19 @@
+<% modifier = modifier ?  modifier : ''; %>
+
+<article class="c-card01 <%= modifier %>">
+  <a href="<%= link %>" class="c-card01__link" target="_blank" rel="noopener noreferrer">
+    <div class="c-card01__imgBlock">
+      <picture class="c-card01__img">
+        <source srcset="./img/slide<%= images_path %>@2x.webp" type="image/webp">
+        <img src="./img/slide<%= images_path %>@2x.jpg" alt="<%= alt %>" width="307" height="255" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="c-card01__content">
+      <h2 class="c-card01__title"><%- title %></h2>
+      <p class="c-card01__price">￥<span class="c-card01__priceLarge"><%- price %></span>&nbsp;tax&nbsp;in</p>
+      <div class="c-card01__button">
+        <div class="c-button02">buy</div>
+      </div>
+    </div>
+  </a>
+</article>

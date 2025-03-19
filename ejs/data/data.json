@@ -1,0 +1,158 @@
+{
+  "data": {
+    "pageMeta": {
+      "top": {
+        "url": "https://example.com",
+        "siteName": "Hello Kitty × Majestic Legon vol.3",
+        "pageTitle": "Hello Kitty × Majestic Legon vol.3",
+        "description": "Hello Kitty × Majestic Legon vol.3の概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "about": {
+        "url": "https://example.com",
+        "siteName": "会社概要｜会社名",
+        "pageTitle": "会社概要｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "service": {
+        "url": "https://example.com",
+        "siteName": "サービス｜会社名",
+        "pageTitle": "サービス｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "recruit": {
+        "url": "https://example.com",
+        "siteName": "求人情報｜会社名",
+        "pageTitle": "求人情報｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "news": {
+        "url": "https://example.com",
+        "siteName": "お知らせ｜会社名",
+        "pageTitle": "お知らせ｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "news-single": {
+        "url": "https://example.com",
+        "siteName": "お知らせ詳細｜会社名",
+        "pageTitle": "お知らせ詳細｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "contact": {
+        "url": "https://example.com",
+        "siteName": "お問い合わせ｜会社名",
+        "pageTitle": "お問い合わせ｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "confirmation": {
+        "url": "https://example.com",
+        "siteName": "お問い合わせ確認｜会社名",
+        "pageTitle": "お問い合わせ確認｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "thanks": {
+        "url": "https://example.com",
+        "siteName": "お問い合わせ完了｜会社名",
+        "pageTitle": "お問い合わせ完了｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "privacy": {
+        "url": "https://example.com",
+        "siteName": "プライバシーポリシー｜会社名",
+        "pageTitle": "プライバシーポリシー｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp0": {
+        "url": "https://example.com",
+        "siteName": "cp0｜会社名",
+        "pageTitle": "cp0｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp1": {
+        "url": "https://example.com",
+        "siteName": "cp1｜会社名",
+        "pageTitle": "cp1｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp2": {
+        "url": "https://example.com",
+        "siteName": "cp2｜会社名",
+        "pageTitle": "cp2｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp3": {
+        "url": "https://example.com",
+        "siteName": "cp_3｜会社名",
+        "pageTitle": "cp_3｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp4": {
+        "url": "https://example.com",
+        "siteName": "cp_4｜会社名",
+        "pageTitle": "cp_4｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro1": {
+        "url": "https://example.com",
+        "siteName": "pro_1｜会社名",
+        "pageTitle": "pro_1｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro2": {
+        "url": "https://example.com",
+        "siteName": "pro_2｜会社名",
+        "pageTitle": "pro_2｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro3": {
+        "url": "https://example.com",
+        "siteName": "pro_3｜会社名",
+        "pageTitle": "pro_3｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro4": {
+        "url": "https://example.com",
+        "siteName": "pro_4｜会社名",
+        "pageTitle": "pro_4｜会社名",
+        "description": "会社名リストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "sass:math";
+
+// 数値のみを取り出す
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function vw($window_width, $size) {
+  @return math.div($size, $window_width) * 100vw;
+}
+
+// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+@function r($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
+
+// ホバーが有効なデバイスのみに適用
+@mixin hover() {
+  @media (any-hover: hover) {
+    @content;
+  }
+}
+
+// フォント設定
+@mixin font($size: 16, $weight: 400m, $space: 0.05em) {
+  font-size: r($size);
+  font-weight: $weight;
+  line-height: 2;
+  letter-spacing: $space;
+}
