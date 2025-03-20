@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.p-styling01 {
+  overflow-x: clip;
+}
+
+.p-styling01__imgWrapper {
+  padding-inline: calc(190 / 1440 * 100vw);
+  margin-top: r(80);
+  position: relative;
+}
+
+.p-styling01__imgWrapper::before {
+  position: absolute;
+  content: "";
+  bottom: -5%;
+  left: -1%;
+  background-image: url(../img/apples-left@2x.webp),
+                    url(../img/apples-left@2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(420 / 1440 * 100vw);
+  height: calc(713 / 1440 * 100vw);
+}
+
+.p-styling01__slideAuto {
+  margin-top: r(140);
+  @include mq() {
+    margin-top: r(80);
+  }
+}
+
+.p-styling01__slide {
+  margin-top: r(140);
+  padding-inline: calc(283 / 1440 * 100vw);
+  @include mq() {
+    padding-inline: 0;
+    margin-top: r(80);
+  }
+}
+

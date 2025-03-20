@@ -12,12 +12,12 @@
   transition: all 0.3s ease;
   display: inline-block;
   width: 100%;
-  max-width: r(300);
+  // max-width: r(300);
   text-transform: uppercase;
-  margin-left: r(18);
+  // margin-left: r(18);
   @include mq() {
     font-size: r(17);
-    max-width: r(243);
+    // max-width: r(243);
     padding-block: r(6);
   }
 }

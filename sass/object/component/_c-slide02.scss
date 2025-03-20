@@ -1,5 +1,22 @@
 @use "global" as *;
 
+.c-slide02__img {
+  aspect-ratio: 253 / 271;
+  overflow: hidden;
+  display: block;
+  @include mq() {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+.c-slide02__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: r(10);
+}
+
 .c-slide02 .splide__pagination {
   bottom: r(-32);
   bottom: calc(-32 / 1440 * 100vw);

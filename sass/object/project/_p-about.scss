@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-about__img {
+  width: calc(830 / 1440 * 100vw);
+  margin: auto;
+  margin-top: r(220);
+  @include mq() {
+    width: calc(280 / 375 * 100vw);
+    margin-top: r(100);
+  }
+}
+
+.p-about__texts {
+  text-align: center;
+  margin-top: r(62);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: r(20);
+  @include mq() {
+    margin-top: r(20);
+    gap: r(8);
+  }
+}
+
+.p-about__text {
+  text-align: center;
+  font-family: var(--font-noto-sans-jp);
+  font-size: r(20);
+  font-weight: 400;
+  line-height: normal;
+  @include mq() {
+    font-size: r(17);
+  }
+}
+

@@ -1,19 +1,86 @@
-<% const page = "top" %>
-<!DOCTYPE html>
-<html lang="ja">
-<%- include('./common/_head', {meta: data.pageMeta[page]}) %>
+<% const page="top" %>
+  <!DOCTYPE html>
+  <html lang="ja">
+  <%- include('./common/_head', {meta: data.pageMeta[page]}) %>
 
-<body>
-  <%- include('./common/_p-header', {page: page}) %>
-  <main class="p-main">
-    <div class="l-inner">
-      
-    </div>
-  </main>
-  <div class="l-scroll-top">
-    <%- include('./component/_c-scroll-top') %>
-  </div>
-  <%- include('./common/_p-footer', {page: page}) %>
-</body>
+    <body>
+      <main class="p-main">
+        <div class="c-mv">
+          <picture class="c-mv__img">
+            <source srcset="../img/mv-sp@2x.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../img/mv-sp@2x.jpg" media="(max-width: 768px)">
+            <source srcset="../img/mv@2x.webp" type="image/webp">
+            <img src="../img/mv@2x.jpg" alt="メインビジュアル" width="1440" height="962" decoding="async" loading="lazy">
+          </picture>
+        </div>
 
-</html>
+        <section class="p-about">
+          <h1 class="p-about__img">
+            <img src="../img/logo.svg" alt="Hello Kitty x Majestic Legon" width="431" height="626" decoding="async"
+              loading="lazy">
+          </h1>
+          <div class="p-about__texts">
+            <p class="p-about__text">大人気キャラクター<br class="u-hidden-pc">ハローキティとのコラボ第3弾！</p>
+            <p class="p-about__text">ネイビー×レッドで<br class="u-hidden-pc">ちょっぴりレトロなラインナップです♡</p>
+          </div>
+        </section>
+
+        <div class="p-styling01">
+          <div class="p-styling01__imgWrapper">
+            <picture class="p-styling01__img">
+              <source srcset="../img/thumbnail01@2x.webp" type="image/webp">
+              <img src="../img/thumbnail01@2x.png" alt="Hello Kitty刺繍の白いカーディガンとフリル付きデニムスカートを合わせたキッチンでのガーリースタイリング" width="431" height="626" decoding="async" loading="lazy">
+            </picture>
+          </div>
+          <div class="p-styling01__slideAuto">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-slide01') %>
+          </div>
+          <div class="p-styling01__slide">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-slide02') %>
+          </div>
+        </div>
+
+        <div class="p-styling02">
+          <div class="p-styling02__imgWrapper">
+            <picture class="p-styling02__img">
+              <source srcset="../img/thumbnail02@2x.webp" type="image/webp">
+              <img src="../img/thumbnail02@2x.png" alt="Hello Kitty刺繍入りの赤いカーディガンとリボン付きデニムパンツを合わせたガーリーファッション" width="431" height="626" decoding="async" loading="lazy">
+            </picture>
+          </div>
+          <div class="p-styling02__slideAuto">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-slide03') %>
+          </div>
+          <div class="p-styling02__slide">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-slide04') %>
+          </div>
+        </div>
+
+        <ul class="p-buttons">
+          <li class="p-buttons__item">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-button01', {
+              modifier: "_accent",
+              link: "#",
+              text: "collab item",
+            }) %>
+          </li>
+          <li class="p-buttons__item">
+            <% /*<!-- prettier-ignore -->*/ %>
+            <%- include('./component/_c-button01', {
+              modifier: "",
+              link: "#",
+              text: "styling item",
+            }) %>
+          </li>
+        </ul>
+
+      </main>
+
+      <%- include('./common/_p-footer', {page: page}) %>
+    </body>
+
+  </html>

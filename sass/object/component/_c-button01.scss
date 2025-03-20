@@ -16,7 +16,6 @@
   display: inline-block;
   transition: color 0.3s, background-color 0.3s;
   @include mq() {
-    max-width: r(300);
     padding-block: r(10);
     font-size: r(16);
   }

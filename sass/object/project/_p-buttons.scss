@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: r(13);
+  margin-top: r(240);
+  width: 100%;
+  max-width: r(1100);
+  margin-inline: auto;
+  @include mq() {
+    margin-top: r(136);
+    max-width: r(300);
+  }
+}
+
+.p-buttons__item {
+
+}
+

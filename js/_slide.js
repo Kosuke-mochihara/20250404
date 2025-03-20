@@ -34,7 +34,7 @@ export function slide() {
   if (document.querySelector(".splide02")) {
     new Splide(".splide02", {
       type: "loop",
-      perPage: 3,
+      perPage: 2,
       perMove: 1,
       autoplay: true,
       interval: 3000,
@@ -42,14 +42,11 @@ export function slide() {
       arrows: false,
       pagination: true,
       focus: 0,
-      // fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
-      // gap: 'min(40px, calc(40 / 1440 * 100vw))',
       fixedWidth: 'calc(416 / 1440 * 100vw)',
-      padding: "33%",
-      gap: '38px',
+      gap: 'calc(40 / 1440 * 100vw)',
       breakpoints: {
         768: {
-          fixedWidth: 'min(294px, calc(294 / 375 * 100vw))',
+          fixedWidth: 'calc(200 / 375 * 100vw)',
           gap: 'min(20px, calc(13 / 375 * 100vw))',
           focus: 'center'
         }
@@ -90,22 +87,19 @@ export function slide() {
   if (document.querySelector(".splide04")) {
     new Splide(".splide04", {
       type: "loop",
-      perPage: 3,
+      perPage: 2,
       perMove: 1,
-      autoplay: true,
+      // autoplay: true,
       interval: 3000,
       pauseOnHover: false,
       arrows: false,
       pagination: true,
       focus: 0,
-      // fixedWidth: 'min(422px, calc(416 / 1440 * 100vw))',
-      // gap: 'min(40px, calc(40 / 1440 * 100vw))',
       fixedWidth: 'calc(416 / 1440 * 100vw)',
-      padding: "33%",
-      gap: '38px',
+      gap: 'calc(40 / 1440 * 100vw)',
       breakpoints: {
         768: {
-          fixedWidth: 'min(294px, calc(294 / 375 * 100vw))',
+          fixedWidth: 'calc(200 / 375 * 100vw)',
           gap: 'min(20px, calc(13 / 375 * 100vw))',
           focus: 'center'
         }

@@ -19,11 +19,9 @@
 }
 
 .c-card01__imgBlock {
-  width: r(307);
   margin-inline: auto;
   padding-block: r(8) r(9);
   @include mq() {
-    width: r(214);
     padding-block: r(5) r(6);
   }
 }
@@ -46,7 +44,7 @@
 .c-card01__content {
   background-color: var(--color-light-blue);
   padding-block: r(27) r(36);
-  border-radius: 0 0 r(9) r(9);
+  border-radius: 0 0 r(7) r(7);
   @include mq() {
     padding-block: r(18);
     border-radius: 0 0 r(18) r(18);
@@ -86,9 +84,13 @@
 
 .c-card01__button {
   text-align: center;
+  max-width: r(300);
   margin-top: r(36);
+  margin-inline: auto;
   @include mq() {
     margin-top: r(18);
+    max-width: 100%;
+    width: 80%;
   }
 }
 
@@ -118,5 +120,30 @@
     right: r(10);
     width: r(50);
     height: r(57);
+  }
+}
+
+.credit__name {
+  font-family: var(--font-noto-sans-jp);
+  color: var(--color-base);
+  text-align: center;
+  font-size: r(20);
+  font-weight: 700;
+  letter-spacing: calc(1 / 20 * 1em);
+  @include mq() {
+    font-size: r(16);
+    font-weight: 700;
+    letter-spacing: calc(0.75 / 15 * 1em);
+  }
+}
+.credit__price {
+  text-align: center;
+  font-size: r(18);
+  font-weight: 700;
+  margin-top: r(14);
+  @include mq() {
+    font-size: r(16);
+    margin-top: r(10);
+    margin-left: r(10);
   }
 }

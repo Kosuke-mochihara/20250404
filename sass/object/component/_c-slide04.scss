@@ -1,5 +1,23 @@
 @use "global" as *;
 
+.c-slide04__img {
+  aspect-ratio: 253 / 271;
+  overflow: hidden;
+  display: block;
+  @include mq() {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+.c-slide04__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: r(5);
+}
+
+
 .c-slide04 .splide__pagination {
   bottom: r(-32);
   @include mq() {
