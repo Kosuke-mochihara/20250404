@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.l-404 {
-  margin-block: r(80) r(120);
-  @include mq() {
-    margin-block: r(40) r(60);
-  }
-}

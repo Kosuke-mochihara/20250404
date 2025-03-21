@@ -34,7 +34,7 @@ export function slide() {
   if (document.querySelector(".splide02")) {
     new Splide(".splide02", {
       type: "loop",
-      perPage: 2,
+      perPage: 3,
       perMove: 1,
       autoplay: true,
       interval: 3000,
@@ -43,6 +43,7 @@ export function slide() {
       pagination: true,
       focus: 0,
       fixedWidth: 'calc(416 / 1440 * 100vw)',
+      fixedWidth: 'calc(300 / 1440 * 100vw)',
       gap: 'calc(40 / 1440 * 100vw)',
       breakpoints: {
         768: {

@@ -67,6 +67,11 @@
     aspect-ratio: 20 / 20;
   }
 }
+@media (any-hover: hover) {
+  .p-footer__snsLink:hover {
+    opacity: 0.5;
+  }
+}
 
 .p-footer__snsLink img {
   width: 100%;
